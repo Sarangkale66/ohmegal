@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 app.use(express.static(path.join(__dirname,"public")));
 
-let waitingusers = [];
+let waitingusers = [ ];
 let rooms ={};
 
 io.on("connection",socket=>{
