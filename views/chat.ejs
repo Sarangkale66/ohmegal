@@ -350,6 +350,7 @@
     
     socket.on("callRejected",()=>{
         alert("Call-Rejected");
+        document.querySelector("#incoming-call").classList.add("hidden");
     })
     
     document.querySelector("#reject-call").addEventListener("click",function(){
