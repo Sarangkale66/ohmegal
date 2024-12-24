@@ -58,6 +58,6 @@ io.on("connection",socket=>{
 
 app.use("/",indexRouter);
 
-server.listen(3000,function(){
+server.listen(process.env.PORT || 3000,function(){
   console.log("http://localhost:3000");
 });
